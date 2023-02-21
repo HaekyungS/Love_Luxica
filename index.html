@@ -12,22 +12,23 @@
 <body>
   <div>
     <div>
-      <h1> 💓Love Luxica😘💓 </h1>
-    </div>
-    <div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <div id="buttons">
-      <button type="button" onclick="button_click(0)"></button>
-      <button type="button" onclick="button_click(1)"></button>
-      <button type="button" onclick="button_click(2)"></button>
-      <button type="button" onclick="button_click(3)"></button>
+      <div>
+        <h1> 💓Love Luxica😘💓 </h1>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div id="buttons">
+        <button type="button" onclick="button_click(0)"></button>
+        <button type="button" onclick="button_click(1)"></button>
+        <button type="button" onclick="button_click(2)"></button>
+        <button type="button" onclick="button_click(3)"></button>
+      </div>
     </div>
   </div>
-
   <script>
     console.log(window.confirm('Love Luxica!'));
     let buttons = document.getElementById('buttons');
@@ -37,9 +38,8 @@
       function button_click(i) {
         Name = buttonName[i];
         for (j = 0; j < buttons.children.length; j++) {
-        buttons.previousElementSibling.children[j].style.cssText = "background-image:url(./css/" + Name + j + ".jpg); background-size:cover; background-position: center;";
+          buttons.previousElementSibling.children[j].style.cssText = "background-image:url(./css/" + Name + j + ".jpg); background-size:cover; background-position: center;";
         }
-        console.dir(Name);
       }
     }
 
