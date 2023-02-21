@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J.Luxica.Y</title>
+  <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1💓Love Luxica😘💓</h1>
+    </div>
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="buttons">
+      <button type="button" onclick="button_click(0)"></button>
+      <button type="button" onclick="button_click(1)"></button>
+      <button type="button" onclick="button_click(2)"></button>
+      <button type="button" onclick="button_click(3)"></button>
+    </div>
+  </div>
+
+  <script>
+    console.log(window.confirm('Love Luxica!'));
+    let buttons = document.getElementById('buttons');
+    let buttonName = ["전원우", "조슈아", "루피", "잔망루피"];
+
+
+    for (i = 0; i < buttons.children.length; i++) {
+      function button_click(i) {
+        Name = buttonName[i];
+        for (j = 0; j < buttons.children.length; j++) {
+        buttons.previousElementSibling.children[j].style.cssText = "background-image:url(./css/" + Name + j + ".jpg); background-size:cover; background-position: center;";
+        }
+        console.dir(Name);
+      }
+      //문제1. 한번 누르면 끝남
+      //문제2. 자꾸 전원우만 나옴 열받게만드네
+
+    }
+    // console.dir(buttons.previousElementSibling.children);
+
+  </script>
+
+</body>
+
+</html>
